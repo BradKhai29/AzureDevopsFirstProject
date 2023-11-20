@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\AzureDevops_FirstProject.props" />
+</Project>
