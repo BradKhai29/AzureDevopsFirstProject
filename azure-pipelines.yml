@@ -7,8 +7,10 @@ trigger:
 - master
 
 pool:
-  name: '$(agent_pool_name)'
-  vmImage: 'windows-latest' 
+  name: $(agent_pool_name)
+  vmImage: 'windows-latest'
+  demands: 
+  - agent.name -equals $(agent_name)
 
 variables:
   solution: '**/*.sln'
