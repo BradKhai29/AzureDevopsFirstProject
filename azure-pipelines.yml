@@ -13,6 +13,7 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
+  testCatogry: $(test_category)
 
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
